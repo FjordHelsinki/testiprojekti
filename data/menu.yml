@@ -1,0 +1,30 @@
+---
+- url: a.html
+  title: A
+  children:
+    - url: a/1.html
+      title: A1
+    - url: a/2.html
+      title: A2
+    - url: a/3.html
+      title: A3
+
+- url: b.html
+  title: B
+  children:
+    - url: b/1.html
+      title: B1
+    - url: b/2.html
+      title: B2
+    - url: b/3.html
+      title: B3
+
+- url: c.html
+  title: C
+  children:
+    - url: c/1.html
+      title: C1
+    - url: c/2.html
+      title: C2
+    - url: c/3.html
+      title: C3

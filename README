@@ -1,0 +1,20 @@
+Helpful Links
+
+	http://github.com/chriseppstein/compass
+	http://compass-style.org/docs/reference/compass/
+	http://haml-lang.com/docs/yardoc/file.HAML_REFERENCE.html
+	http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
+	http://github.com/jlong/serve/blob/master/lib/serve/view_helpers.rb
+
+Initial Setup (run from repository root folder after you have cloned this repository)
+
+	bundle install
+	rm -fr .git
+	git init && git add . && git commit -am "First commit."
+
+Other Commands
+
+	rackup                    - Start server for development
+	heroku create <app name>  - Create Heroku app
+	git push heroku master    - Deploy to Heroku
+	heroku open               - Open Heroku app in browser

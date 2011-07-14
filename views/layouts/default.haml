@@ -1,0 +1,24 @@
+!!! XML
+!!! Strict
+%html(xmlns="http://www.w3.org/1999/xhtml")
+  %head
+    %title= [@title, "Project name"].compact.join(" | ")
+    %meta(http-equiv="content-type" content="text/html; charset=UTF-8")
+    %link(href="favicon.ico" rel="shortcut icon" type="image/ico")
+    %link(href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css")
+    %link(href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css")
+    /[if lt IE 8]
+      %link(href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css")
+    %script(src="javascripts/jquery.js" type="text/javascript")
+    %script(src="javascripts/application.js") type="text/javascript")
+  %body(id=body_id class=body_classes)
+    #wrapper
+      #header
+        = render "header"
+      #main
+        #sidebar
+          = yield :sidebar
+        #content
+          = yield
+      #footer
+        = render "footer"
